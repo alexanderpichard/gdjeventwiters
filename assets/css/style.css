@@ -17,7 +17,8 @@ body {
 
 a {
   text-decoration: none;
-  color: #8fc04e;
+  /*color: #8fc04e;*/
+  color:#ff0534;
 }
 
 a:hover {
@@ -88,7 +89,11 @@ h6 {
 
 #topbar .contact-info i {
   font-style: normal;
-  color: #8fc04e;
+  /*color: #8fc04e;*/
+  color:#ff0534;
+  text-shadow:
+		0 0 5px rgba(255,5,52),
+		0 0 10px rgba(255,5,52);
 }
 
 #topbar .contact-info i a,
@@ -202,7 +207,11 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #8fc04e;
+ /* color: #8fc04e;*/
+ color:#ff0534;
+  text-shadow:
+		0 0 5px rgba(255,5,52),
+		0 0 10px rgba(255,5,52);
 }
 
 .navbar .getstarted,
@@ -336,7 +345,7 @@ h6 {
   left: 15px;
   padding: 10px 0;
   border-radius: 8px;
-  background-color: #fff;
+  background-color: #000;/*#fff;*/
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -345,7 +354,7 @@ h6 {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #353535;
+  color: #fff;/*#353535;*/
 }
 
 .navbar-mobile a:hover,
