@@ -7,6 +7,10 @@ body {
   color: black;
 }
 
+p {
+  font-family: 'Roboto', sans-serif;
+
+}
 a {
   text-decoration: none;
  
@@ -374,7 +378,7 @@ h6 {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #fff;/*#353535;*/
+  color: #fff;
 }
 
 .navbar-mobile a:hover,
