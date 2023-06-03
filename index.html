@@ -23,8 +23,8 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!--link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>-->
 
 
   <!-- enlace al css para estilos -->
@@ -435,7 +435,7 @@
               </div>
               <div class="member-info">
                 <h4>Kai Capital</h4>
-                <span>Socio Inversor</span>
+                <span> <b>Socio Inversor</b></span>
               </div>
             </div>
           </div>
@@ -456,7 +456,7 @@
               <div class="testimonial-item">
                 <img src="assets/img/team/team-1.jpg" class="testimonial-img" alt="">
                 <h3>Kai Capital</h3>
-                <h4>Socio &amp; Inversor</h4>
+                <h4>Socio &amp; Inversor <b></b></h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                   Kai Capital es un Family Office comprometido con su entorno. Centramos todos los esfuerzos en realizar inversiones ligadas a la responsabilidad social, la sostenibilidad y la ética.
@@ -606,20 +606,16 @@
         <div class="faq-list">
           <ul>
             <li data-aos="fade-up">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">¿Si os contratamos poneis vosotros el personal y la barra? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1"> ¿Vuestros servicios incluyen el personal y las barras necesarias para cada evento?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
-                <p>
-                  Si, tenemos personal altamente cualificado para cada tipo de evento y barras móviles diseñadas para cada servicio.
-                </p>
+                <p id="resp1"></p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="100">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Cuál es el coste de vuestro servicio? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">¿Cuál es el coste de vuestro servicio? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  Depende de las características del evento. llama o escribenos un mensaje estaremos encantados de atenderte.
-                </p>
+                <p id="resp2"></p>
               </div>
             </li>
 
@@ -702,7 +698,7 @@
         </div>
 
       </div>
-       <!--bot-->
+       <!--bot-
 
        <div id="chatbot" class="container">
         <div id="chatbot-messages" class="card">
@@ -716,7 +712,7 @@
         </div>
       </div>
 
-      <!--Final bot-->
+      Final bot-->
     </section><!-- End F.A.Q Section -->
 
     <!-- ======= Contact Section ======= -->
@@ -848,34 +844,7 @@
   <script src="assets/js/main.js"></script>
   <script src="assets/js/map.js" ></script>
   <script src="assets/js/formulario.js"></script>
-  <script>
-    document.getElementById('send-button').addEventListener('click', function() {
-      var userInput = document.getElementById('user-input').value;
-      addMessage(userInput, 'user');
-      processInput(userInput);
-      document.getElementById('user-input').value = '';
-    });
-  
-    function addMessage(text, sender) {
-      var messagesContainer = document.getElementById('chatbot-messages');
-      var messageDiv = document.createElement('div');
-      messageDiv.classList.add('message');
-      messageDiv.classList.add(sender);
-      messageDiv.textContent = text;
-      messagesContainer.appendChild(messageDiv);
-    }
-  
-    function processInput(userInput) {
-      // Aquí puedes implementar la lógica para procesar la entrada del usuario y generar una respuesta del chatbot
-      // Puedes usar condicionales, llamadas a APIs, etc.
-      // Por simplicidad, aquí se muestra una respuesta predeterminada
-      var botResponse = 'Gracias por tu mensaje. Estoy procesando tu solicitud...';
-      setTimeout(function() {
-        addMessage(botResponse, 'bot');
-      }, 1000);
-    }
-  </script>
-  <script></script>
+  <!--script src="assets/js/bot.js"></script-->
 </body>
 
 </html>
