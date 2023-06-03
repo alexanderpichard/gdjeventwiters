@@ -3,18 +3,20 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: black;
+ 
 }
 
 p {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
 
 }
 a {
   text-decoration: none;
  
   color:#FA1C16;
+  /*text-shadow: 0 0 3vw #FA1C16;*/
 }
 
 
@@ -29,7 +31,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Concert One', cursive;
+  font-family: 'Raleway', sans-serif;
   
 }
 
@@ -42,7 +44,7 @@ h6 {
 }*/
 
 .neon {
-  font-family: 'Concert One', cursiva;
+  font-family: 'Raleway Dots', cursive;
   color: #FA1C16;
   font-size: 9vw;
   line-height: 9vw;
@@ -59,11 +61,12 @@ h6 {
   0%,
   100% {
     text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
-    color: #FED128;
+    /*color: #FED128;*/
+    color: #fff;
   }
   50% {
     text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
-    color: #806914;
+    color: #FA1C16;
   }
 }
 /*--------------------------------------------------------------
@@ -114,7 +117,7 @@ h6 {
 #topbar {
   background: #000000;
   padding: 10px 0;
-  font-size: 14px;
+  font-size: 20px;
   color: #000000;
 }
 
@@ -181,7 +184,8 @@ h6 {
 #header .logo img {
   padding: 0;
   margin: 0;
-  max-height: 40px;
+  max-height: 90px;
+  max-width: 90px;
 }
 
 .scrolled-offset {
@@ -427,7 +431,9 @@ h6 {
 .navbar-mobile .dropdown>.dropdown-active {
   display: block;
 }
-
+.camb {
+  color: #FA1C16;
+}
 /*--------------------------------------------------------------
 #  Seccion Hero
 --------------------------------------------------------------*/
@@ -436,7 +442,10 @@ h6 {
   height: 60vh;
   background: url("../img/imgCorp/coche.jpg") top center;
   background-size: cover;
-  position: relative;
+  /*position: relative;*/
+  background-position: center;
+  filter: brightness(0.9);
+  opacity: 0.9;
 }
 
 #hero:before {
@@ -1776,3 +1785,13 @@ section {
   text-align: center;
   font-size: 13px;
 }
+ /*.services {
+  background-image: url('/assets/img/imgCorp/cta-bg.jpg');
+  background-size: cover; -- Ajusta la imagen al tamaño del div --
+  background-position: center; /* Centra la imagen dentro del div 
+ }*/
+  .cove {
+    background-size: cover;
+    background-position: center;
+  }
+

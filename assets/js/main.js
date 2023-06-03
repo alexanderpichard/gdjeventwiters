@@ -244,4 +244,22 @@
    */
   new PureCounter();
 
+  /***
+   * Funcion txt efecto de escritura..
+   */
+
+  const texto = "GDJ es una empresa fundada por tres jóvenes amigos que decidieron juntarse y unir fuerzas para ocupar un hueco en el mercado de los eventos. Con muchas ganas de trabajar y de crear algo innovador que les distinguiese de los demás y les representara como personas, decidieron afrontar este reto. “GDJ” está orientado a aquellos eventos que precisen del servicio de barra de bebidas. Cuenta con un equipo de trabajadores altamente cualificados, equipo de limpieza, barman profesionales y todo el mobiliario y material necesario para afrontar cualquier tipo de evento. El ambiente animado y el buen rollo que se transmite en cada evento es parte de la filosofía. El equipo de GDJ se ha ido forjando a raíz de trabajar en el mismo lado de la barra a lo largo de los años, desarrollando una compenetración y organización extraordinaria. GDJ quiere aparecer en el mercado con una idea diferente sobre el servicio de barras, profesionalidad, compañerismo y entusiasmo son los 3 adjetivos que representan nuestra filosofía del trabajo. Ofrecer el mejor servicio para los clientes es la prioridad de este grupo. ¡Nuestros oídos están deseando escuchar tu idea, GDJ pone la barra!";
+  const velocidadEscritura = 50; // Velocidad de escritura en milisegundos
+
+let index = 0;
+function escribirTexto() {
+if (index < texto.length) {
+  document.getElementById("texto-escritor").textContent += texto.charAt(index);
+  index++;
+  setTimeout(escribirTexto, velocidadEscritura);
+}
+}
+
+escribirTexto();
+
 })()
