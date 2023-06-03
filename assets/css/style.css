@@ -1789,9 +1789,12 @@ section {
   background-image: url('/assets/img/imgCorp/cta-bg.jpg');
   background-size: cover; -- Ajusta la imagen al tamaño del div --
   background-position: center; /* Centra la imagen dentro del div 
- }*/
+ }
   .cove {
     background-size: cover;
     background-position: center;
-  }
+  }*/
 
+ .bi-arrow-down{
+  font-size: 28px;
+ }
