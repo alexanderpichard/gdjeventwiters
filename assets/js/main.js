@@ -247,7 +247,7 @@
   /***
    * Funcion txt efecto de escritura..
    */
-
+/*
   const texto = "GDJ EVENT WAITERS";
   const velocidadEscritura = 100; // Velocidad de escritura en milisegundos
 
@@ -264,5 +264,5 @@ if (index < texto.length) {
 }
 
 escribirTexto();
-
+*/
 })();

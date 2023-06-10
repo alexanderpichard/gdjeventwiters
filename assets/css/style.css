@@ -1660,7 +1660,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: url("../img/imgCorp/bares.jpg") center center no-repeat;
+  background: url("../img/imgCorp/cta.jpg") center center no-repeat;
   color: #fff;
   font-size: 14px;
   position: relative;
@@ -1810,3 +1810,38 @@ section {
   .stars {
     color: #FFD700;
   }
+
+  /*popup whatsapp*/
+
+  .joinchat-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .joinchat-popup {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 200px;
+    padding: 10px;
+    background-color: red;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .joinchat-popup p {
+    margin: 0;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+  }
+  
+  
