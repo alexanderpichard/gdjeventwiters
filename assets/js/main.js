@@ -1,4 +1,11 @@
 
+window.onload = function() {
+  var video = document.getElementById('video_principal');
+  if (window.location.pathname === '/index.html') {
+    video.play();
+  }
+};
+
 (function() {
   "use strict";
 
