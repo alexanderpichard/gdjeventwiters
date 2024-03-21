@@ -1,15 +1,16 @@
-/**
-* Template Name: Remember
-* Updated: Mar 10 2023 with Bootstrap v5.2.3
-* Template URL: https://bootstrapmade.com/remember-free-multipurpose-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
+window.onload = function() {
+  var video = document.getElementById('video_principal');
+  if (window.location.pathname === '/index.html') {
+    video.play();
+  }
+};
+
 (function() {
   "use strict";
 
   /**
-   * Easy selector helper function
+   * Función de ayudante selector 
    */
   const select = (el, all = false) => {
     el = el.trim()
@@ -21,7 +22,7 @@
   }
 
   /**
-   * Easy event listener function
+   * función de escucha de eventos
    */
   const on = (type, el, listener, all = false) => {
     let selectEl = select(el, all)
@@ -35,14 +36,14 @@
   }
 
   /**
-   * Easy on scroll event listener 
+   *  Escucha de eventos de desplazamiento 
    */
   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
   }
 
   /**
-   * Navbar links active state on scroll
+   * Navbar links active estado de scroll
    */
   let navbarlinks = select('#navbar .scrollto', true)
   const navbarlinksActive = () => {
@@ -62,7 +63,7 @@
   onscroll(document, navbarlinksActive)
 
   /**
-   * Scrolls to an element with header offset
+   * Se desplaza a un elemento con desplazamiento de encabezado
    */
   const scrollto = (el) => {
     let header = select('#header')
@@ -76,7 +77,7 @@
   }
 
   /**
-   * Header fixed top on scroll
+   * Encabezado fijo en la parte superior del scroll
    */
   let selectHeader = select('#header')
   if (selectHeader) {
@@ -96,7 +97,7 @@
   }
 
   /**
-   * Back to top button
+   * whatsapp boton
    */
   let backtotop = select('.back-to-top')
   if (backtotop) {
@@ -112,7 +113,7 @@
   }
 
   /**
-   * Mobile nav toggle
+   * Alternar navegación móvil
    */
   on('click', '.mobile-nav-toggle', function(e) {
     select('#navbar').classList.toggle('navbar-mobile')
@@ -121,7 +122,8 @@
   })
 
   /**
-   * Mobile nav dropdowns activate
+   * Se activan los menús desplegables de navegación móvil
+   * 
    */
   on('click', '.navbar .dropdown > a', function(e) {
     if (select('#navbar').classList.contains('navbar-mobile')) {
@@ -131,7 +133,7 @@
   }, true)
 
   /**
-   * Scrool with ofset on links with a class name .scrollto
+   * Scrool con ofset en enlaces con un nombre de clase .scrollto
    */
   on('click', '.scrollto', function(e) {
     if (select(this.hash)) {
@@ -149,7 +151,7 @@
   }, true)
 
   /**
-   * Scroll with ofset on page load with hash links in the url
+   * Desplazarse con ofset en la carga de la página con enlaces hash en la url
    */
   window.addEventListener('load', () => {
     if (window.location.hash) {
@@ -160,7 +162,7 @@
   });
 
   /**
-   * Porfolio isotope and filter
+   * filtro de galeria
    */
   window.addEventListener('load', () => {
     let portfolioContainer = select('.portfolio-container');
@@ -191,14 +193,14 @@
   });
 
   /**
-   * Initiate portfolio lightbox 
+   *  
    */
   const portfolioLightbox = GLightbox({
     selector: '.portfolio-lightbox'
   });
 
   /**
-   * Portfolio details slider
+   * galeria
    */
   new Swiper('.portfolio-details-slider', {
     speed: 400,
@@ -215,7 +217,7 @@
   });
 
   /**
-   * Testimonials slider
+   * Testimonial slider
    */
   new Swiper('.testimonials-slider', {
     speed: 600,
@@ -233,7 +235,7 @@
   });
 
   /**
-   * Animation on scroll
+   * Animacion en scroll
    */
   window.addEventListener('load', () => {
     AOS.init({
@@ -245,8 +247,29 @@
   });
 
   /**
-   * Initiate Pure Counter 
+   * Iniciar Pure Counter
    */
   new PureCounter();
 
-})()
+  /***
+   * Funcion txt efecto de escritura..
+   */
+/*
+  const texto = "GDJ EVENT WAITERS";
+  const velocidadEscritura = 100; // Velocidad de escritura en milisegundos
+
+let index = 0;
+function escribirTexto() {
+if (index < texto.length) {
+  document.getElementById("texto-escritor").textContent += texto.charAt(index);
+  
+ // document.getElementById("resp2").textContent += resp2.charAt(index);
+  index++;
+  setTimeout(escribirTexto, velocidadEscritura);
+
+  } 
+}
+
+escribirTexto();
+*/
+})();
